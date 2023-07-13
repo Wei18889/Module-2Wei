@@ -16,6 +16,7 @@ The Wei Yu Gao Portfolio web application includes sections for the developer's a
 
 ## Screenshot
 Portfolio Screenshot
+<img width="872" alt="1" src="https://github.com/Wei18889/Module-2Wei/assets/137247865/b3726cd0-bf59-4138-8583-e5b029f8cbad">
 
 
 ## Live Demo
