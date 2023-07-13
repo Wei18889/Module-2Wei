@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Wei Yu Gao</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="tilt.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" crossorigin="anonymous"></script>
+  <style>
+    .about-section {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 81%;
+      background: #060606b0;
+      border-radius: 80px;
+      padding: 100px 55px;
+      box-sizing: border-box;
+      transition: 0.5s;
+    }
+  </style>
+</head>
+
+<body>
+  <input type="checkbox" id="check">
+  <label for="check" class="checkbtn">
+    <i class="fas fa-bars"></i>
+  </label>
+  <nav>
+    <label class="logo">Wei Yu Gao</label>
+    <ul>
+      <li><a class="active" href="#">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="background-image">
+    <div id="about" class="about-section">
+      <h2>ABOUT ME :")</h2>
+      <p>Hello, my name is Wei Yu Gao. I am a 21-year-old with a passion for coding. I am currently exploring the world of programming and find it fascinating as I continue to develop my skills. I am actively working on improving my coding abilities and embracing the challenges that come with it. Let's connect and collaborate with fellow coding enthusiasts on this exciting journey. Thank you for taking the time to learn more about me.</p>
+    </div>
+  </div>
+
+  <div id="work" class="work-section">
+    <h2>MY WORK</h2>
+    <a href="https://example.com/project1" alt="Pic-1">
+      <img src="Project/0-1.jpg" alt="Project 1" class="larger-image frame">
+    </a>
+    <a href="https://example.com/project2" alt="pic-2">
+      <img src="Project/0-2.jpg" alt="Project 2" class="larger-image frame">
+    </a>
+    <a href="https://example.com/project3" alt="pic-3">
+      <img src="Project/0.jpg" alt="Project 3" class="larger-image frame">
+    </a>
+  </div>
+
+  <div id="contact" class="contact-section">
+    <h2>Contact</h2>
+    <p>Feel free to reach out to me for any inquiries or collaborations. You can contact me via email at <a href="mailto:weiyu12gao@gmail.com">weiyu12gao@gmail.com</a> or through the contact form below.</p>
+    <form>
+      <input type="text" placeholder="Name" required>
+      <input type="email" placeholder="Email" required>
+      <textarea placeholder="Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+  <script>
+    document.querySelectorAll('nav ul li a').forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const target = document.querySelector(link.getAttribute('href'));
+        target.scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+  </script>
+
+</body>
+
+</html>
